@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanlar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(255, 251, 211, 1);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+        .form-container p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .form-container select,
+        .form-container input[type="text"],
+        .form-container input[type="file"],
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        .form-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <p>Fanlar</p>
+        <select name="fanlar" id="fanlar">
+            <option value="tarix">Tarix</option>
+            <option value="matematika">Matematika</option>
+            <option value="kimyo">Kimyo</option>
+            <option value="fizika">Fizika</option>
+            <option value="biologiya">Biologiya</option>
+        </select>
+        <input type="file" name="file" id="file">
+        <input type="text" name="izoh" id="izoh" placeholder="Izoh kiriting">
+        <button>Saqlash</button>
+        <a href="{% url 'home' %}" style="text-decoration: none;">Bosh sahifa</a>
+    </div>
+</body>
+</html>

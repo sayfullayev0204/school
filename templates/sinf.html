@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(255, 251, 211, 1);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-card {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .profile-card h3 {
+            margin: 0;
+            color: #333;
+        }
+        .profile-card h5 {
+            margin: 5px 0;
+            color: #777;
+        }
+        .profile-card p a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .profile-card p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="/media/a.png" alt="Profile Picture">
+        <h3>Alibek</h3>
+        <h5>Valiyev</h5>
+        <h5>4 sinf o'quvchisi</h5>
+        <p><a href="{% url 'home' %}">Bosh sahifa</a></p>
+    </div>
+</body>
+</html>
