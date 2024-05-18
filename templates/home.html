@@ -130,6 +130,147 @@
                 <div style="background-color: #007BFF; color: white;"><a href="{% url 'fan' %}">Faningizni tanlang</a></div>
                 <div style="background-color: #007BFF; color: white;"><a href="{% url 'vazifa' %}">Uy vazifasini yuklang</a></div>
                 <div style="background-color: #007BFF; color: white;"><a href="{% url 'tek' %}">Tekshirish</a></div>
+                <div style="background-color: #007BFF; color: white;"><a href="{% url 'info' %}">Na'muna</a></div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 O'quv Sayti. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'quv Sayti</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(255, 251, 211, 1);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .header, .content, .footer {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: rgba(255, 251, 211, 1);
+        }
+        .header h1 {
+            text-align: center;
+            color: #333;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            color: #777;
+        }
+        .content div {
+            margin-bottom: 20px;
+        }
+        .steps div {
+            background: #e2e2e2;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 5px;
+            flex: 1;
+        }
+        .steps div:hover {
+            background: #ccc;
+        }
+        .a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .content-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .content-flex > div {
+            flex: 1;
+            min-width: 300px;
+        }
+        .steps {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px;
+            }
+            .steps {
+                flex-direction: column;
+            }
+            .steps div {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                padding: 10px;
+                text-align: center;
+            }
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .content-flex {
+                flex-direction: column;
+            }
+            .content-flex > div {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="header" style="background: url(/media/h.png); height: 500px;">
+            <h1>Uyga vazifalarni birga qilamiz</h1>
+        </div>
+        <div class="container">
+        <div class="content">
+            <div class="content-flex">
+                <div class="content">
+                    <p>Assalomu alaykum xush kelibsiz bizdagi imkoniyatlar bilan tanishib chiqing. Biz bu o`quv saytini qilishimizdan asosiy maqsad hozirda ko`pchilik Ota-Onalarda farzandlari uchun Uyga vazifalarni bajarishga yordam berishga ba`zan vaqt masalasi qiyin bo`lishi sir emas. Shu bois bu sayt orqali va mobil versiyalaridan foydalangan holda O`quvchi o`zi mustaqil bajargan uy vazifalarini tizimga yuklab tekshirishlari va xato kamchiliklar bo`lsa tizimdan yordam olgan holda birgalikda qaytatdan bajarish imkoniyatiga ega bo`ladilar.</p>
+                    <img src="https://lh4.googleusercontent.com/QWzTQn5H1t1DwWLI65x5oG1jp2P8lTpUIuZ2sCzC9nopxLxEsXY9VpK4WH6VC1boIMQuTdWNI-OsnwYITts7XYB5n6bW9DzBIvTm6w9co7uasdrUMR4PmMiLdF_cVSXXFA=w1280" alt="">
+                </div>
+                <div class="content">
+                    <p>Kutilayotgan natijalar: Birinchi navbatda o`quvchidagi dars qilaolmaslik haqidagi o`y-fikr qo`rquvni yengishga hamda vazifalarni zo`r qiziqish orqali bajarish xohishni rivojlantirishda va Ota-Ona, Oqituvchilar uchun kelajak avlodni olayotgan bilimlarini mustahkamlashga zarur dassturiy platforma bo`lishi aniq.</p>
+                    <img src="https://lh4.googleusercontent.com/ia_xPMu5OCO1qQu73haUq6s6Il9ZeZusqj7Yb8YiXUutr2QRsa2etTZIamACnWVtBRwd4HkniSi7LGzdZWKKLO-6ejRfjYt9f0o9XQEawvRoMG2sSe5rnwOz_8lTQizA=w1280" alt="">
+                </div>
+            </div>
+            <div class="steps">
+                <div style="background-color: #007BFF; color: white;"><a href="{% url 'sinf' %}">Sinifingiz</a></div>
+                <div style="background-color: #007BFF; color: white;"><a href="{% url 'fan' %}">Faningizni tanlang</a></div>
+                <div style="background-color: #007BFF; color: white;"><a href="{% url 'vazifa' %}">Uy vazifasini yuklang</a></div>
+                <div style="background-color: #007BFF; color: white;"><a href="{% url 'tek' %}">Tekshirish</a></div>
             </div>
         </div>
         <div class="footer">
