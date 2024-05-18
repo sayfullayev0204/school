@@ -1,1 +1,56 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS kodlari */
+        body {
+            font-family: Arial, sans-serif; /* matn yozuvining turi */
+            background-color: #f0f0f0; /* foni */
+            margin: 0; /* sahifa kengligi yopilishi */
+            padding: 0; /* sahifa ichidagi bo'shliklar */
+        }
+
+        div {
+            padding: 20px; /* har bir div ichidagi bo'shliklar */
+            margin-bottom: 20px; /* har bir divning pastdagi bo'shliklar */
+            background-color: #fff; /* div foni */
+            border-radius: 5px; /* divning kengligi */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* divning siraq-i bor */
+        }
+
+        h1 {
+            color: #333; /* sarlavha rangi */
+        }
+
+        video {
+            width: 100%; /* video videosi kengligi */
+            border-radius: 5px; /* video videosi kengligi */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* video videosi siraq-i bor */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div  style="text-align: center; ">
+            <h1>
+                Ushu sahifada platformadan foydalanish bo'yich ko'rsatmalar bor
+            </h1>
+            <a href="{% url 'home' %}" style="text-decoration: none;">Bosh sahifa</a>
+        </div>
+        <div>
+            <video controls>
+                <source src="/media/v.mp4" type="video/mp4"> <!-- typeni ham qo'shishni unutmang -->
+            </video>
+        </div>
+        <div>
+            <video controls>
+                <source src="/media/v2.mp4" type="video/mp4"> <!-- typeni ham qo'shishni unutmang -->
+            </video>
+        </div>
+    </div>
+</body>
+</html>
