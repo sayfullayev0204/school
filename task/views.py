@@ -10,3 +10,5 @@ def uzifa(request):
     return render(request , 'vazifa.html')
 def tek(request):
     return render(request , 'tek.html')
+def info(request):
+    return render(request , 'info.html')
